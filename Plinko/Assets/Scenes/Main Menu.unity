@@ -228,7 +228,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: f9860a9e7533842f9a0753290a264399, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 8713d277e532444f0bc6b95dd25f9bb2, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1265,7 +1265,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 291811830}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 861016194}
+        m_TargetAssemblyTypeName: OptionsMenuController, Assembly-CSharp
+        m_MethodName: ShareButton
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &291811830
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1663,7 +1675,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 9fa99904c12ab4698b86699a3c7ce7c4, type: 3}
+  m_Sprite: {fileID: 21300000, guid: c340f740d8bda442da100756cb14a45a, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1749,7 +1761,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4230445714512594328, guid: 291b26a21e01c4d4ab0f2cdd408adabe, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4230445714512594331, guid: 291b26a21e01c4d4ab0f2cdd408adabe, type: 3}
       propertyPath: m_Pivot.x
@@ -3421,7 +3433,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &861016191
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3495,6 +3507,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _duration: 0.3
+  _shareURL: https://google.com
+  _privacyPolicyWebView: {fileID: 1900085666445226, guid: 8cc55302fb0e2458a86f3af007525a30, type: 3}
 --- !u!114 &861016195
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6733,6 +6747,8 @@ GameObject:
   - component: {fileID: 1709051643}
   - component: {fileID: 1709051642}
   - component: {fileID: 1709051645}
+  - component: {fileID: 1709051646}
+  - component: {fileID: 1709051647}
   m_Layer: 5
   m_Name: Privacy Policy Button
   m_TagString: Untagged
@@ -6803,7 +6819,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1709051643}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 861016194}
+        m_TargetAssemblyTypeName: OptionsMenuController, Assembly-CSharp
+        m_MethodName: PrivacyPolicy
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1709051643
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6857,6 +6885,42 @@ MonoBehaviour:
   _UIController: {fileID: 861016194}
   _movable: 0
   _finalAlpha: 1
+--- !u!114 &1709051646
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1709051640}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e3f7b20d9745144c69a541d4c609b44c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1709051647
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1709051640}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 598e18fb001004a81960f552978ecf4e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  urlOnStart: 
+  showOnStart: 0
+  fullScreen: 0
+  useToolbar: 0
+  toolbarPosition: 0
+  frame:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 0
+    height: 0
+  referenceRectTransform: {fileID: 0}
 --- !u!1 &1722551266 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8310322113828300654, guid: 5624a551b490844738cbff22972519e2, type: 3}
