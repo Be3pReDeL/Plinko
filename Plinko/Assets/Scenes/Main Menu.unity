@@ -495,7 +495,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _UIController: {fileID: 83339985}
-  _movable: 1
+  _movable: 0
   _finalAlpha: 1
 --- !u!1 &136953512 stripped
 GameObject:
