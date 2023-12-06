@@ -5,7 +5,7 @@ public class LevelSelectorMenuController : UIController
 {
     [SerializeField] private float _duration = 1f;
 
-    public void Start()
+    private void OnEnable()
     {
         for (int i = 0; i < _tweenObjects.Count; i++)
         {

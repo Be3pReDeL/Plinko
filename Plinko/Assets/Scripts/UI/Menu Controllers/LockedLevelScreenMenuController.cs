@@ -1,11 +1,15 @@
 using UnityEngine;
 using System.Collections.Generic;
+using TMPro;
 
 public class LockedLevelScreenMenuController : UIController
 {
     [SerializeField] private float _duration = 1f;
 
-    public void Start()
+    [SerializeField] private GameObject _lockedLevelScreen;
+    [SerializeField] private TextMeshProUGUI _lockedLevelScreenCost;
+
+    private void OnEnable()
     {
         for (int i = 0; i < _tweenObjects.Count; i++)
         {
@@ -19,5 +23,11 @@ public class LockedLevelScreenMenuController : UIController
         {
             _tweenObjects[i].Disappear(_duration);
         }
+    }
+
+    public void ShowCantBuyDialog(int cost){
+        _lockedLevelScreen.SetActive(true);
+
+        _lockedLevelScreenCost.text = cost.ToString();
     }
 }

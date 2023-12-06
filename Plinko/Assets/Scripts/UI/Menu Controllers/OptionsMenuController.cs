@@ -9,7 +9,7 @@ public class OptionsMenuController : UIController
     [SerializeField] private string _shareURL = "https://google.com";
     [SerializeField] private GameObject _privacyPolicyWebView;
 
-    public void Start()
+    private void OnEnable()
     {
         for (int i = 0; i < _tweenObjects.Count; i++)
         {

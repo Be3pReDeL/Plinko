@@ -268,6 +268,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 321366416}
     m_Modifications:
+    - target: {fileID: 2214714240315737805, guid: 5624a551b490844738cbff22972519e2, type: 3}
+      propertyPath: _levelIndex
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 2214714240315737805, guid: 5624a551b490844738cbff22972519e2, type: 3}
+      propertyPath: _lockedLevelScreenMenuController
+      value: 
+      objectReference: {fileID: 294876916}
     - target: {fileID: 8310322114645677537, guid: 5624a551b490844738cbff22972519e2, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -401,6 +409,7 @@ GameObject:
   - component: {fileID: 83339983}
   - component: {fileID: 83339985}
   - component: {fileID: 83339986}
+  - component: {fileID: 83339988}
   m_Layer: 5
   m_Name: Level Selector Menu
   m_TagString: Untagged
@@ -497,6 +506,18 @@ MonoBehaviour:
   _UIController: {fileID: 83339985}
   _movable: 0
   _finalAlpha: 1
+--- !u!114 &83339988
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 83339981}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6c96cefb75fcd41c3b1cac95b3f6784a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &136953512 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5945727290594142452, guid: 5624a551b490844738cbff22972519e2, type: 3}
@@ -803,6 +824,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 321366416}
     m_Modifications:
+    - target: {fileID: 2214714240315737805, guid: 5624a551b490844738cbff22972519e2, type: 3}
+      propertyPath: _levelIndex
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 2214714240315737805, guid: 5624a551b490844738cbff22972519e2, type: 3}
+      propertyPath: _lockedLevelScreenMenuController
+      value: 
+      objectReference: {fileID: 294876916}
     - target: {fileID: 8310322114645677537, guid: 5624a551b490844738cbff22972519e2, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -970,11 +999,11 @@ RectTransform:
   m_Father: {fileID: 861016191}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 239.99994}
-  m_SizeDelta: {x: -80, y: -980.0001}
-  m_Pivot: {x: 0.5, y: 0.5}
+  m_AnchorMin: {x: 0.5, y: 1}
+  m_AnchorMax: {x: 0.5, y: 1}
+  m_AnchoredPosition: {x: 0, y: -249.99994}
+  m_SizeDelta: {x: 686, y: 678.9999}
+  m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &261653428
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1078,6 +1107,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 321366416}
     m_Modifications:
+    - target: {fileID: 2214714240315737805, guid: 5624a551b490844738cbff22972519e2, type: 3}
+      propertyPath: _levelIndex
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 2214714240315737805, guid: 5624a551b490844738cbff22972519e2, type: 3}
+      propertyPath: _lockedLevelScreenMenuController
+      value: 
+      objectReference: {fileID: 294876916}
     - target: {fileID: 8310322114645677537, guid: 5624a551b490844738cbff22972519e2, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -1342,8 +1379,8 @@ GameObject:
   - component: {fileID: 294876911}
   - component: {fileID: 294876913}
   - component: {fileID: 294876912}
-  - component: {fileID: 294876914}
   - component: {fileID: 294876915}
+  - component: {fileID: 294876916}
   m_Layer: 5
   m_Name: Locked Level Screen
   m_TagString: Untagged
@@ -1411,19 +1448,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 294876910}
   m_CullTransparentMesh: 1
---- !u!114 &294876914
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 294876910}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2c96ad33f55c64646a4e3b53c845f298, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _duration: 1
 --- !u!114 &294876915
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1436,9 +1460,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8bea60c199a7b4cb4acbc2d967108bc3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _UIController: {fileID: 294876914}
-  _movable: 1
+  _UIController: {fileID: 294876916}
+  _movable: 0
   _finalAlpha: 1
+--- !u!114 &294876916
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 294876910}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c96ad33f55c64646a4e3b53c845f298, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _duration: 0.3
+  _lockedLevelScreen: {fileID: 294876910}
+  _lockedLevelScreenCost: {fileID: 634881267}
 --- !u!1 &301235795 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8310322113828300654, guid: 5624a551b490844738cbff22972519e2, type: 3}
@@ -1971,6 +2010,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 321366416}
     m_Modifications:
+    - target: {fileID: 2214714240315737805, guid: 5624a551b490844738cbff22972519e2, type: 3}
+      propertyPath: _levelIndex
+      value: 17
+      objectReference: {fileID: 0}
+    - target: {fileID: 2214714240315737805, guid: 5624a551b490844738cbff22972519e2, type: 3}
+      propertyPath: _lockedLevelScreenMenuController
+      value: 
+      objectReference: {fileID: 294876916}
     - target: {fileID: 8310322114645677537, guid: 5624a551b490844738cbff22972519e2, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -2448,18 +2495,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 861016194}
-        m_TargetAssemblyTypeName: OptionsMenuController, Assembly-CSharp
-        m_MethodName: Start
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
 --- !u!114 &583074986
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2693,7 +2728,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f1ef4c77410384f8a9e43b9e3725d0ff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _UIController: {fileID: 294876914}
+  _UIController: {fileID: 294876916}
   _movable: 0
   _finalAlpha: 1
 --- !u!1 &660692355 stripped
@@ -2736,6 +2771,154 @@ MonoBehaviour:
   _UIController: {fileID: 83339985}
   _movable: 0
   _finalAlpha: 1
+--- !u!1 &701883671
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 701883672}
+  - component: {fileID: 701883675}
+  - component: {fileID: 701883674}
+  - component: {fileID: 701883673}
+  m_Layer: 5
+  m_Name: Wallet Value Count Text
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &701883672
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 701883671}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1527946556}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 25, y: 0}
+  m_SizeDelta: {x: -100, y: -30}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &701883673
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 701883671}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a826a5cd030fa4449b2101188eae81f6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &701883674
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 701883671}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: 1000
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: 2c635e116d2b14447859b0f181f8d36c, type: 2}
+  m_sharedMaterial: {fileID: -6115988672644216566, guid: 2c635e116d2b14447859b0f181f8d36c, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 18.45
+  m_fontSizeBase: 18.45
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 0
+  m_HorizontalAlignment: 2
+  m_VerticalAlignment: 4096
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_enableWordWrapping: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 1
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &701883675
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 701883671}
+  m_CullTransparentMesh: 1
 --- !u!1 &729291711 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1236168023449402329, guid: 5624a551b490844738cbff22972519e2, type: 3}
@@ -2968,6 +3151,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 321366416}
     m_Modifications:
+    - target: {fileID: 2214714240315737805, guid: 5624a551b490844738cbff22972519e2, type: 3}
+      propertyPath: _levelIndex
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 2214714240315737805, guid: 5624a551b490844738cbff22972519e2, type: 3}
+      propertyPath: _lockedLevelScreenMenuController
+      value: 
+      objectReference: {fileID: 294876916}
     - target: {fileID: 8310322114645677537, guid: 5624a551b490844738cbff22972519e2, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -3090,6 +3281,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 321366416}
     m_Modifications:
+    - target: {fileID: 2214714240315737805, guid: 5624a551b490844738cbff22972519e2, type: 3}
+      propertyPath: _levelIndex
+      value: 19
+      objectReference: {fileID: 0}
+    - target: {fileID: 2214714240315737805, guid: 5624a551b490844738cbff22972519e2, type: 3}
+      propertyPath: _lockedLevelScreenMenuController
+      value: 
+      objectReference: {fileID: 294876916}
     - target: {fileID: 8310322114645677537, guid: 5624a551b490844738cbff22972519e2, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -3192,6 +3391,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 321366416}
     m_Modifications:
+    - target: {fileID: 2214714240315737805, guid: 5624a551b490844738cbff22972519e2, type: 3}
+      propertyPath: _levelIndex
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 2214714240315737805, guid: 5624a551b490844738cbff22972519e2, type: 3}
+      propertyPath: _lockedLevelScreenMenuController
+      value: 
+      objectReference: {fileID: 294876916}
     - target: {fileID: 8310322114645677537, guid: 5624a551b490844738cbff22972519e2, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -3335,7 +3542,7 @@ GameObject:
   - component: {fileID: 852491234}
   - component: {fileID: 852491236}
   m_Layer: 5
-  m_Name: Levels Image
+  m_Name: Options Image
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3591,6 +3798,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 321366416}
     m_Modifications:
+    - target: {fileID: 2214714240315737805, guid: 5624a551b490844738cbff22972519e2, type: 3}
+      propertyPath: _levelIndex
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2214714240315737805, guid: 5624a551b490844738cbff22972519e2, type: 3}
+      propertyPath: _lockedLevelScreenMenuController
+      value: 
+      objectReference: {fileID: 294876916}
     - target: {fileID: 8310322114645677537, guid: 5624a551b490844738cbff22972519e2, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -3681,7 +3896,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8858652301946043314, guid: 5624a551b490844738cbff22972519e2, type: 3}
       propertyPath: m_text
-      value: 100
+      value: 50
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5624a551b490844738cbff22972519e2, type: 3}
@@ -3814,7 +4029,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 294876914}
+      - m_Target: {fileID: 294876916}
         m_TargetAssemblyTypeName: LockedLevelScreenMenuController, Assembly-CSharp
         m_MethodName: OKButton
         m_Mode: 1
@@ -3876,7 +4091,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8bea60c199a7b4cb4acbc2d967108bc3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _UIController: {fileID: 294876914}
+  _UIController: {fileID: 294876916}
   _movable: 0
   _finalAlpha: 1
 --- !u!1 &994526720
@@ -4019,7 +4234,8 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 1103190902}
   m_Father: {fileID: 2100228534}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -4108,6 +4324,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 321366416}
     m_Modifications:
+    - target: {fileID: 2214714240315737805, guid: 5624a551b490844738cbff22972519e2, type: 3}
+      propertyPath: _levelIndex
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 2214714240315737805, guid: 5624a551b490844738cbff22972519e2, type: 3}
+      propertyPath: _lockedLevelScreenMenuController
+      value: 
+      objectReference: {fileID: 294876916}
     - target: {fileID: 8310322114645677537, guid: 5624a551b490844738cbff22972519e2, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -4546,6 +4770,154 @@ MonoBehaviour:
   _UIController: {fileID: 83339985}
   _movable: 0
   _finalAlpha: 1
+--- !u!1 &1103190901
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1103190902}
+  - component: {fileID: 1103190905}
+  - component: {fileID: 1103190904}
+  - component: {fileID: 1103190903}
+  m_Layer: 5
+  m_Name: Wallet Value Count Text
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1103190902
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1103190901}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1030260807}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 25.000076, y: -0.00012207031}
+  m_SizeDelta: {x: -100, y: -30}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1103190903
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1103190901}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a826a5cd030fa4449b2101188eae81f6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1103190904
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1103190901}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: 1000
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: 2c635e116d2b14447859b0f181f8d36c, type: 2}
+  m_sharedMaterial: {fileID: -6115988672644216566, guid: 2c635e116d2b14447859b0f181f8d36c, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 18.45
+  m_fontSizeBase: 18.45
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 0
+  m_HorizontalAlignment: 2
+  m_VerticalAlignment: 4096
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_enableWordWrapping: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 1
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &1103190905
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1103190901}
+  m_CullTransparentMesh: 1
 --- !u!1 &1103557469 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8310322113073129173, guid: 5624a551b490844738cbff22972519e2, type: 3}
@@ -4598,6 +4970,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 321366416}
     m_Modifications:
+    - target: {fileID: 2214714240315737805, guid: 5624a551b490844738cbff22972519e2, type: 3}
+      propertyPath: _levelIndex
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2214714240315737805, guid: 5624a551b490844738cbff22972519e2, type: 3}
+      propertyPath: _lockedLevelScreenMenuController
+      value: 
+      objectReference: {fileID: 294876916}
     - target: {fileID: 8310322114645677537, guid: 5624a551b490844738cbff22972519e2, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -4780,6 +5160,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 321366416}
     m_Modifications:
+    - target: {fileID: 2214714240315737805, guid: 5624a551b490844738cbff22972519e2, type: 3}
+      propertyPath: _levelIndex
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 2214714240315737805, guid: 5624a551b490844738cbff22972519e2, type: 3}
+      propertyPath: _lockedLevelScreenMenuController
+      value: 
+      objectReference: {fileID: 294876916}
     - target: {fileID: 8310322114645677537, guid: 5624a551b490844738cbff22972519e2, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -4950,6 +5338,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 321366416}
     m_Modifications:
+    - target: {fileID: 2214714240315737805, guid: 5624a551b490844738cbff22972519e2, type: 3}
+      propertyPath: _levelIndex
+      value: 18
+      objectReference: {fileID: 0}
+    - target: {fileID: 2214714240315737805, guid: 5624a551b490844738cbff22972519e2, type: 3}
+      propertyPath: _lockedLevelScreenMenuController
+      value: 
+      objectReference: {fileID: 294876916}
     - target: {fileID: 8310322114645677537, guid: 5624a551b490844738cbff22972519e2, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -5716,7 +6112,8 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 701883672}
   m_Father: {fileID: 1062236778}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -6305,18 +6702,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 83339985}
-        m_TargetAssemblyTypeName: LevelSelectorMenuController, Assembly-CSharp
-        m_MethodName: Start
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
 --- !u!114 &1669894173
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6389,6 +6774,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 321366416}
     m_Modifications:
+    - target: {fileID: 2214714240315737805, guid: 5624a551b490844738cbff22972519e2, type: 3}
+      propertyPath: _levelIndex
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 2214714240315737805, guid: 5624a551b490844738cbff22972519e2, type: 3}
+      propertyPath: _lockedLevelScreenMenuController
+      value: 
+      objectReference: {fileID: 294876916}
     - target: {fileID: 8310322114645677537, guid: 5624a551b490844738cbff22972519e2, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -6594,7 +6987,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8bea60c199a7b4cb4acbc2d967108bc3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _UIController: {fileID: 294876914}
+  _UIController: {fileID: 294876916}
   _movable: 0
   _finalAlpha: 1
 --- !u!1 &1690593076 stripped
@@ -6624,6 +7017,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 321366416}
     m_Modifications:
+    - target: {fileID: 2214714240315737805, guid: 5624a551b490844738cbff22972519e2, type: 3}
+      propertyPath: _levelIndex
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 2214714240315737805, guid: 5624a551b490844738cbff22972519e2, type: 3}
+      propertyPath: _lockedLevelScreenMenuController
+      value: 
+      objectReference: {fileID: 294876916}
     - target: {fileID: 8310322114645677537, guid: 5624a551b490844738cbff22972519e2, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -7188,6 +7589,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 321366416}
     m_Modifications:
+    - target: {fileID: 2214714240315737805, guid: 5624a551b490844738cbff22972519e2, type: 3}
+      propertyPath: _levelIndex
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2214714240315737805, guid: 5624a551b490844738cbff22972519e2, type: 3}
+      propertyPath: _lockedLevelScreenMenuController
+      value: 
+      objectReference: {fileID: 294876916}
     - target: {fileID: 8310322114645677537, guid: 5624a551b490844738cbff22972519e2, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -7370,6 +7779,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 321366416}
     m_Modifications:
+    - target: {fileID: 2214714240315737805, guid: 5624a551b490844738cbff22972519e2, type: 3}
+      propertyPath: _levelIndex
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2214714240315737805, guid: 5624a551b490844738cbff22972519e2, type: 3}
+      propertyPath: _lockedLevelScreenMenuController
+      value: 
+      objectReference: {fileID: 294876916}
     - target: {fileID: 8310322114645677537, guid: 5624a551b490844738cbff22972519e2, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -7554,6 +7971,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 321366416}
     m_Modifications:
+    - target: {fileID: 2214714240315737805, guid: 5624a551b490844738cbff22972519e2, type: 3}
+      propertyPath: _levelIndex
+      value: 13
+      objectReference: {fileID: 0}
+    - target: {fileID: 2214714240315737805, guid: 5624a551b490844738cbff22972519e2, type: 3}
+      propertyPath: _lockedLevelScreenMenuController
+      value: 
+      objectReference: {fileID: 294876916}
     - target: {fileID: 8310322114645677537, guid: 5624a551b490844738cbff22972519e2, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -7922,6 +8347,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 321366416}
     m_Modifications:
+    - target: {fileID: 2214714240315737805, guid: 5624a551b490844738cbff22972519e2, type: 3}
+      propertyPath: _levelIndex
+      value: 16
+      objectReference: {fileID: 0}
+    - target: {fileID: 2214714240315737805, guid: 5624a551b490844738cbff22972519e2, type: 3}
+      propertyPath: _lockedLevelScreenMenuController
+      value: 
+      objectReference: {fileID: 294876916}
     - target: {fileID: 8310322114645677537, guid: 5624a551b490844738cbff22972519e2, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -8059,6 +8492,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 321366416}
     m_Modifications:
+    - target: {fileID: 2214714240315737805, guid: 5624a551b490844738cbff22972519e2, type: 3}
+      propertyPath: _levelIndex
+      value: 14
+      objectReference: {fileID: 0}
+    - target: {fileID: 2214714240315737805, guid: 5624a551b490844738cbff22972519e2, type: 3}
+      propertyPath: _lockedLevelScreenMenuController
+      value: 
+      objectReference: {fileID: 294876916}
     - target: {fileID: 8310322114645677537, guid: 5624a551b490844738cbff22972519e2, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -8304,6 +8745,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 321366416}
     m_Modifications:
+    - target: {fileID: 2214714240315737805, guid: 5624a551b490844738cbff22972519e2, type: 3}
+      propertyPath: _lockedLevelScreenMenuController
+      value: 
+      objectReference: {fileID: 294876916}
     - target: {fileID: 8310322114645677537, guid: 5624a551b490844738cbff22972519e2, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
