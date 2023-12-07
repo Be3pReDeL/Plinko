@@ -1,8 +1,10 @@
 [
     {
-        "privacy policy" : "https://googleprivacy.com"
+        "linkName" : "privacy policy",
+        "link" : "https://googleprivacy.com"
     },
     {
-        "game" : "https://googleggame.com" 
+        "linkName" : "game",
+        "link" : "https://googlegame.com"
     }
 ]
