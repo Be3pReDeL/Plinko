@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 4960404783511462}
   - component: {fileID: 114939446366399424}
   m_Layer: 0
-  m_Name: UniWebView
+  m_Name: Game WebView
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -44,7 +44,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 598e18fb001004a81960f552978ecf4e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  urlOnStart: https:google.com
+  urlOnStart: 
   showOnStart: 1
   fullScreen: 1
   useToolbar: 1

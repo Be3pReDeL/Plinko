@@ -38,7 +38,6 @@ using System;
 /// 
 /// </summary>
 public class UniWebViewSafeBrowsing: UnityEngine.Object {
-
     /// <summary>
     /// Delegate for safe browsing finish event.
     /// </summary>

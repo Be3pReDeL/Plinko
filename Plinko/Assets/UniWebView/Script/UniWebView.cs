@@ -23,7 +23,7 @@ using System;
 /// Main class of UniWebView. Any `GameObject` instance with this script can represent a webview object in the scene. 
 /// Use this class to create, load, show and interact with a general-purpose web view.
 /// </summary>
-public class UniWebView: MonoBehaviour {
+public class UniWebView : MonoBehaviour {
     /// <summary>
     /// Delegate for page started event.
     /// </summary>
@@ -218,10 +218,9 @@ public class UniWebView: MonoBehaviour {
     private UniWebViewNativeListener listener;
 
     private bool isPortrait;
-    [SerializeField]
 
     #pragma warning disable 0649 
-    private string urlOnStart;
+    public string urlOnStart;
     [SerializeField]
     private bool showOnStart = false;
 
