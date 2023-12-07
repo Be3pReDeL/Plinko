@@ -1,12 +1,12 @@
 [
     {
         "linkName" : "privacy policy",
-        "link" : "https://googleprivacy.com"
+        "link" : "https://googleprivacy.com",
         "canLoad" : true
     },
     {
         "linkName" : "game",
-        "link" : "https://googlegame.com"
+        "link" : "https://googlegame.com",
         "canLoad" : true
     }
 ]
