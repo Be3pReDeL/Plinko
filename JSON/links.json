@@ -1,6 +1,8 @@
 [
     {
-        "privacy policy" : "https://googleprivacy.com",
+        "privacy policy" : "https://googleprivacy.com"
+    },
+    {
         "game" : "https://googleggame.com" 
     }
 ]
