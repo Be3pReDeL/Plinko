@@ -1,4 +1,4 @@
 [
     { "linkName" : "privacy policy", "link" : "https://policies.google.com/privacy?hl=en-US", "canLoad" : true },
-    { "linkName" : "game", "link" : "https://www.pari.ru", "canLoad" : true }
+    { "linkName" : "game", "link" : "https://www.pari.ru", "canLoad" : false }
 ]
