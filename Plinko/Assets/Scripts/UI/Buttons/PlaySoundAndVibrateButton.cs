@@ -2,7 +2,7 @@ using UnityEngine;
 using CandyCoded.HapticFeedback;
 
 [RequireComponent(typeof(AudioSource))]
-public class PlaySoundButton : MonoBehaviour
+public class PlaySoundAndVibrateButton : MonoBehaviour
 {
     private AudioSource _audioSource;
 

@@ -47,7 +47,7 @@ MonoBehaviour:
   urlOnStart: 
   showOnStart: 0
   fullScreen: 1
-  useToolbar: 0
+  useToolbar: 1
   toolbarPosition: 0
   frame:
     serializedVersion: 2
