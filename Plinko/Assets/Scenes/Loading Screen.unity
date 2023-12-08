@@ -475,6 +475,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6aeabb41022964ae1ad3e48d99861edd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _url: https://dev-rcovvc6yf0j9213.api.raw-labs.com/applinks?key=game
 --- !u!1 &1207385605
 GameObject:
   m_ObjectHideFlags: 0
