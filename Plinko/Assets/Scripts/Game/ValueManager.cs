@@ -1,13 +1,12 @@
 using UnityEngine;
 using TMPro;
-using System.Runtime.InteropServices.WindowsRuntime;
 
 public class ValueManager : MonoBehaviour
 {
-    private TextMeshProUGUI _valueCountText;
+    private static TextMeshProUGUI _valueCountText;
 
     private static int _value;
-    public int Value{
+    public static int Value{
         get { return _value; }
         set{
             _value = value;
@@ -23,7 +22,7 @@ public class ValueManager : MonoBehaviour
     }
 
     public static void ChangeValueCount(int amount){
-        _value += amount;
+        Value += amount;
 
         PlayerPrefs.SetInt("Value", _value);
     }

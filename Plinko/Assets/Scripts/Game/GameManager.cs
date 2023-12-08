@@ -61,16 +61,20 @@ public class GameManager : MonoBehaviour
     }
 
     public void AddScore(float amount){
-        _currentScore += Mathf.Round(amount);
+        if(_currentScore + amount < 0)
+            _currentScore = 0;
+        else{
+            _currentScore += Mathf.Round(amount);
 
-        _currentScoreText.text = _currentScore.ToString();
+            _currentScoreText.text = _currentScore.ToString();
 
-        _scoredScoreText.font = Mathf.Sign(amount) < 0 ? _redFont : _greenFont;
-        _scoredScoreText.text = Mathf.Sign(amount) < 0 ? Mathf.Round(amount).ToString() : "+" + " " + Mathf.Round(amount).ToString();
+            _scoredScoreText.font = Mathf.Sign(amount) < 0 ? _redFont : _greenFont;
+            _scoredScoreText.text = Mathf.Sign(amount) < 0 ? Mathf.Round(amount).ToString() : "+" + " " + Mathf.Round(amount).ToString();
 
-        _slider.value = _currentScore;
+            _slider.value = _currentScore;
 
-        if(_currentScore >= _levels[LevelData.GetCurrentLevel()])
-            _winMenu.SetActive(true);
+            if(_currentScore >= _levels[LevelData.GetCurrentLevel()])
+                _winMenu.SetActive(true);
+        }
     }
 }

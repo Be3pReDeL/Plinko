@@ -2101,7 +2101,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4230445714512594328, guid: 291b26a21e01c4d4ab0f2cdd408adabe, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4230445714512594331, guid: 291b26a21e01c4d4ab0f2cdd408adabe, type: 3}
       propertyPath: m_Pivot.x
@@ -2693,7 +2693,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: -7203361624712007397, guid: 51f8ca253af5a404da9af65e79d7313d, type: 2}
-  m_audioClip: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: f66ac7eae09704dd38d0e82e6289b28a, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -8811,6 +8811,10 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_TargetAssemblyTypeName
       value: PlaySoundAndVibrateButton, Assembly-CSharp
       objectReference: {fileID: 0}
+    - target: {fileID: 3634847960521368729, guid: 5624a551b490844738cbff22972519e2, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgument
+      value: 
+      objectReference: {fileID: 8300000, guid: f246bb818b84047ce820789e71316664, type: 3}
     - target: {fileID: 3634847960521368729, guid: 5624a551b490844738cbff22972519e2, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgument
       value: 
