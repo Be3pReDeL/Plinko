@@ -9,6 +9,8 @@ public class Basket : MonoBehaviour
 
     private AudioSource _audioSource;
 
+    [SerializeField] private GameObject _superGameMenu;
+
     public enum BasketType{
         green,
         red,
@@ -33,6 +35,7 @@ public class Basket : MonoBehaviour
                 break;
 
             case BasketType.supergame:
+                _superGameMenu.SetActive(true);
                 break;
         } 
     }
