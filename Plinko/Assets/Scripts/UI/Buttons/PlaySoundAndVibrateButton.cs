@@ -1,4 +1,5 @@
 using UnityEngine;
+using CandyCoded.HapticFeedback;
 
 [RequireComponent(typeof(AudioSource))]
 public class PlaySoundButton : MonoBehaviour
@@ -13,5 +14,10 @@ public class PlaySoundButton : MonoBehaviour
     public void PlaySound(AudioClip audioClip)
     {
         _audioSource.PlayOneShot(audioClip);
+    }
+
+    public void Vibrate(){
+        if(PlayerPrefs.GetInt("Vibrate", 0) == 1)
+            HapticFeedback.LightFeedback();
     }
 }

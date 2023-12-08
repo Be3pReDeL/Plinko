@@ -1800,7 +1800,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4230445714512594328, guid: 291b26a21e01c4d4ab0f2cdd408adabe, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4230445714512594331, guid: 291b26a21e01c4d4ab0f2cdd408adabe, type: 3}
       propertyPath: m_Pivot.x
@@ -5549,6 +5549,7 @@ GameObject:
   - component: {fileID: 1266083376}
   - component: {fileID: 1266083375}
   - component: {fileID: 1266083378}
+  - component: {fileID: 1266083379}
   m_Layer: 5
   m_Name: Toggle Button
   m_TagString: Untagged
@@ -5619,7 +5620,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1266083376}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1266083379}
+        m_TargetAssemblyTypeName: DisableVibration, Assembly-CSharp
+        m_MethodName: DisableVibrationButton
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1266083376
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5673,6 +5686,20 @@ MonoBehaviour:
   _UIController: {fileID: 861016194}
   _movable: 0
   _finalAlpha: 1
+--- !u!114 &1266083379
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1266083373}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fd6619b49ae864f7488564f211648796, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _disableVibrationImage: {fileID: 21300000, guid: eb8aced5349894ee09a9614cc2fd94ce, type: 3}
+  _enableVibrationImage: {fileID: 21300000, guid: 6d4995cceb1fe4ced9ac2e2ab654fb93, type: 3}
 --- !u!1 &1341676195 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3772870409233869628, guid: 5624a551b490844738cbff22972519e2, type: 3}

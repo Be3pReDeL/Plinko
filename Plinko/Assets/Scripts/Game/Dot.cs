@@ -1,5 +1,6 @@
 using UnityEngine;
 using System.Collections;
+using CandyCoded.HapticFeedback;
 public class Dot : MonoBehaviour
 {
     private SpriteRenderer _spriteRenderer;
@@ -23,6 +24,9 @@ public class Dot : MonoBehaviour
     }
 
     private IEnumerator MakeDotRedForTime(float time){
+        if(PlayerPrefs.GetInt("Vibrate", 0) == 1)
+            HapticFeedback.LightFeedback();
+
         _spriteRenderer.sprite = _redDotSprite;
 
         yield return new WaitForSeconds(time);

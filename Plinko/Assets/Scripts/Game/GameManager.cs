@@ -44,7 +44,7 @@ public class GameManager : MonoBehaviour
 
     private void Update(){
         if(StartCountTime){
-            if(timer <= _timeBetweenPlinks)
+            if(timer < _timeBetweenPlinks)
                 timer += Time.deltaTime;
 
             else{
@@ -68,7 +68,7 @@ public class GameManager : MonoBehaviour
         _scoredScoreText.font = Mathf.Sign(amount) < 0 ? _redFont : _greenFont;
         _scoredScoreText.text = Mathf.Sign(amount) < 0 ? Mathf.Round(amount).ToString() : "+" + " " + Mathf.Round(amount).ToString();
 
-        _slider.value += amount;
+        _slider.value = _currentScore;
 
         if(_currentScore >= _levels[LevelData.GetCurrentLevel()])
             _winMenu.SetActive(true);

@@ -455,7 +455,7 @@ MonoBehaviour:
   _portal: {fileID: 111756293}
   _levels: 320000003c00000046000000500000005a00000064000000780000008c000000a0000000b4000000c8000000dc000000f000000004010000180100002c0100004a010000680100008601000090010000
   _winMenu: {fileID: 1257530963}
-  _timeBetweenPlinks: 3
+  _timeBetweenPlinks: 1
 --- !u!1001 &54760975
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -788,6 +788,7 @@ GameObject:
   m_Component:
   - component: {fileID: 111756293}
   - component: {fileID: 111756294}
+  - component: {fileID: 111756295}
   m_Layer: 0
   m_Name: Portal
   m_TagString: Untagged
@@ -862,6 +863,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &111756295
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 111756292}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb60ae87f08114610ba9524b6ba9a373, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _maxX: 2
 --- !u!1001 &161876000
 PrefabInstance:
   m_ObjectHideFlags: 0

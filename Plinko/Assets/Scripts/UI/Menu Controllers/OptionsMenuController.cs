@@ -1,6 +1,5 @@
 using UnityEngine;
-using System.Collections.Generic;
-using NativeShareNamespace;
+using UnityEngine.iOS;
 
 public class OptionsMenuController : UIController
 {
@@ -34,5 +33,9 @@ public class OptionsMenuController : UIController
 
     public void PrivacyPolicy(){
         Instantiate(_privacyPolicyWebView);
+    }
+
+    public void RateUs(){
+        Device.RequestStoreReview();
     }
 }

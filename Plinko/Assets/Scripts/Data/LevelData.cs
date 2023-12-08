@@ -5,6 +5,7 @@ public class LevelData : MonoBehaviour
 {
     private void Awake(){
         SetLevelOpened(0);
+        SetLevelOpened(19);
     }
 
     public static bool GetLevelOpened(int index){
