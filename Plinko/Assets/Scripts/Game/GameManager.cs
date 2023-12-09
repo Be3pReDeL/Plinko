@@ -61,8 +61,16 @@ public class GameManager : MonoBehaviour
     }
 
     public void AddScore(float amount){
-        if(_currentScore + amount < 0)
+        if((_currentScore + amount) < 0){
             _currentScore = 0;
+            _currentScoreText.text = _currentScore.ToString();
+
+            _scoredScoreText.font = Mathf.Sign(amount) < 0 ? _redFont : _greenFont;
+            _scoredScoreText.text = Mathf.Sign(amount) < 0 ? Mathf.Round(amount).ToString() : "+" + " " + Mathf.Round(amount).ToString();
+
+            _slider.value = _currentScore;
+        }
+            
         else{
             _currentScore += Mathf.Round(amount);
 

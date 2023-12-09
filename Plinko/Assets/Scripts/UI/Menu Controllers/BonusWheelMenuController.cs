@@ -19,6 +19,8 @@ public class BonusWheelMenuController : UIController
 
     [SerializeField] private BigSpinBonusMenuController _bigSpinBonusMenuController;
 
+    [SerializeField] private Button _spinButton;
+
     private enum WinType{
         nextlevel,
         minusten,
@@ -42,6 +44,8 @@ public class BonusWheelMenuController : UIController
 
     //Это ужасно, но я устал :(
     public void RotateWheel(){
+        _spinButton.interactable = false;
+
         float randomAngle = Random.Range(360f, 3600f);
 
         _fortuneWheel.DOLocalRotate(new Vector3(0f, 0f, randomAngle), 5f, RotateMode.FastBeyond360).onComplete += () =>{
@@ -98,13 +102,22 @@ public class BonusWheelMenuController : UIController
 
     private IEnumerator NextLevel(){
         _audioSource.PlayOneShot(_plusThirtySound);
-        LevelData.SetLevelOpened(LevelData.GetCurrentLevel() + 1);
         LevelData.SetLevelWin(LevelData.GetCurrentLevel());
-        LevelData.SetCurrentLevel(LevelData.GetCurrentLevel() + 1);
-        
-        yield return new WaitForSeconds(3f);
 
-        LoadScene.LoadSceneByRelativeIndex(0);
+        if(LevelData.GetCurrentLevel() == 19){
+            yield return new WaitForSeconds(3f);
+            
+            LoadScene.LoadPreviousScene();
+        }
+
+        else{
+            LevelData.SetLevelOpened(LevelData.GetCurrentLevel() + 1);
+            LevelData.SetCurrentLevel(LevelData.GetCurrentLevel() + 1);
+            
+            yield return new WaitForSeconds(3f);
+
+            LoadScene.LoadSceneByRelativeIndex(0);
+        }
     }
 
     private IEnumerator MinusTen(){
