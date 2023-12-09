@@ -215,6 +215,7 @@ GameObject:
   - component: {fileID: 519420032}
   - component: {fileID: 519420031}
   - component: {fileID: 519420029}
+  - component: {fileID: 519420033}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -288,6 +289,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &519420033
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 519420028}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d99bffcaa0b4e4b21811897e0c8fbc1a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _screenOrientation: 1
 --- !u!1 &775019103
 GameObject:
   m_ObjectHideFlags: 0
@@ -405,6 +419,7 @@ GameObject:
   - component: {fileID: 823476595}
   - component: {fileID: 823476597}
   - component: {fileID: 823476598}
+  - component: {fileID: 823476599}
   m_Layer: 0
   m_Name: GameManagers
   m_TagString: Untagged
@@ -476,6 +491,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _url: https://dev-rcovvc6yf0j9213.api.raw-labs.com/applinks?key=game
+--- !u!114 &823476599
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 823476593}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a97314134cb224dca8d26b157ac16056, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _OneSignalKey: 9de3d33a-2827-4c1e-99ce-7c1bee096e28
 --- !u!1 &1207385605
 GameObject:
   m_ObjectHideFlags: 0
@@ -761,6 +789,10 @@ PrefabInstance:
     - target: {fileID: 4230445714512594328, guid: 291b26a21e01c4d4ab0f2cdd408adabe, type: 3}
       propertyPath: m_Name
       value: Black Screen
+      objectReference: {fileID: 0}
+    - target: {fileID: 4230445714512594328, guid: 291b26a21e01c4d4ab0f2cdd408adabe, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4230445714512594331, guid: 291b26a21e01c4d4ab0f2cdd408adabe, type: 3}
       propertyPath: m_Pivot.x

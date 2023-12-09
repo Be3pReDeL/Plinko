@@ -21,6 +21,7 @@ public class DisableVibration : MonoBehaviour
             _disableVibrationButton.image.sprite = _disableVibrationImage;
     }
 
+    [OPS.Obfuscator.Attribute.DoNotRename]
     public void DisableVibrationButton()
     {
         if (PlayerPrefs.GetInt("Vibrate", 0) == 0)

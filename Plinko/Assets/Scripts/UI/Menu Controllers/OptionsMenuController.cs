@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.iOS;
 using UnityEngine.Networking;
+using UniWebViewNamespace;
 
 public class OptionsMenuController : UIController
 {
@@ -10,6 +11,7 @@ public class OptionsMenuController : UIController
     [SerializeField] private GameObject _privacyPolicyWebView;
 
     [SerializeField] private string _privacyPolicyURL;
+    [SerializeField] private string _appID;
 
     private void OnEnable()
     {
@@ -19,6 +21,7 @@ public class OptionsMenuController : UIController
         }
     }
 
+    [OPS.Obfuscator.Attribute.DoNotRename]
     public void Back()
     {
         for(int i = 0; i < _tweenObjects.Count; i++)
@@ -27,17 +30,20 @@ public class OptionsMenuController : UIController
         }
     }
 
+    [OPS.Obfuscator.Attribute.DoNotRename]
     public void ShareButton(){
         new NativeShare()
-			.SetSubject("Plinker!").SetText("Check this cool Plinker game!")
+			.SetSubject("Plinker!").SetText("Check this cool Plinker game!").SetUrl("https://apps.apple.com/us/app/id" + _appID)
 			.SetCallback((result, shareTarget) => Debug.Log("Share result: " + result + ", selected app: " + shareTarget))
 			.Share();
     }
 
+    [OPS.Obfuscator.Attribute.DoNotRename]
     public void RateUs(){
         Device.RequestStoreReview();
     }
 
+    [OPS.Obfuscator.Attribute.DoNotRename]
     public void PrivacyPolicy(){
         GameObject webView = Instantiate(_privacyPolicyWebView);
 

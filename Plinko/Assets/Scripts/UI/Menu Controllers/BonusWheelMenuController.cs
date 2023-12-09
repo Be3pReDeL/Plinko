@@ -4,7 +4,6 @@ using UnityEngine;
 using UnityEngine.UI;
 using System.Collections;
 using System.ComponentModel;
-using Unity.VisualScripting;
 
 public class BonusWheelMenuController : UIController
 {
@@ -43,6 +42,7 @@ public class BonusWheelMenuController : UIController
     }
 
     //Это ужасно, но я устал :(
+    [OPS.Obfuscator.Attribute.DoNotRename]
     public void RotateWheel(){
         _spinButton.interactable = false;
 
@@ -106,7 +106,7 @@ public class BonusWheelMenuController : UIController
 
         if(LevelData.GetCurrentLevel() == 19){
             yield return new WaitForSeconds(3f);
-            
+
             LoadScene.LoadPreviousScene();
         }
 

@@ -4,6 +4,8 @@ using System.IO;
 using System.Text;
 using System;
 
+namespace UniWebViewNamespace
+{
 public class UniWebViewGradleConfig
 {
     private UniWebViewGradleNode m_root;
@@ -343,4 +345,4 @@ public sealed class UniWebViewGradleCommentNode : UniWebViewGradleNode
         return m_name;
     }
 }
-
+}

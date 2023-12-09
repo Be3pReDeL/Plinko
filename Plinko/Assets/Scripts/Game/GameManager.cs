@@ -54,6 +54,7 @@ public class GameManager : MonoBehaviour
         }
     }
 
+    [OPS.Obfuscator.Attribute.DoNotRename]
     public void PlinkButton(){
         GameObject newBall = Instantiate(_ball, _portal.position + new Vector3(Random.Range(-_DELTAX, _DELTAX), 0f, 0f), Quaternion.identity);
 

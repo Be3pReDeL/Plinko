@@ -4,6 +4,8 @@ using System;
 using System.Reflection;
 using UnityEngine;
 
+namespace UniWebViewNamespace
+{
 public class UniWebViewAndroidStaticListener: MonoBehaviour {
     void Awake() {
         DontDestroyOnLoad(gameObject);
@@ -34,6 +36,7 @@ public class UniWebViewAndroidStaticListener: MonoBehaviour {
         }
         methodInfo.Invoke(listener, new object[] { String.Join("@", left) });
     }
+}
 }
 
 // #endif

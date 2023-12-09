@@ -24,6 +24,8 @@ using Net = UnityEngine.Networking.UnityWebRequest;
 using Net = UnityEngine.WWW;
 #endif
 
+namespace UniWebViewNamespace
+{
 /// <summary>
 /// A structure represents a message from webview.
 /// </summary>
@@ -108,4 +110,5 @@ public struct UniWebViewMessage {
             UniWebViewLogger.Instance.Critical("Bad url scheme. Can not be parsed to UniWebViewMessage: " + rawMessage);
         }
     }
+}
 }

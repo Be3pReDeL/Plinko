@@ -2,6 +2,8 @@
 
 using UnityEngine;
 
+namespace UniWebViewNamespace
+{
 public class UniWebViewInterface {
     
     private static bool alreadyLoggedWarning = false;
@@ -85,5 +87,6 @@ public class UniWebViewInterface {
             Debug.LogWarning("UniWebView only supports iOS/Android/macOS Editor. You current platform " + Application.platform + " is not supported.");
         }
     }
+}
 }
 #endif

@@ -18,6 +18,9 @@
 /// An enum to identify transition edge from or to when the UniWebView
 /// transition happens. You can specify an edge in Show() or Hide() methods of web view.
 /// </summary>
+/// 
+namespace UniWebViewNamespace
+{
 public enum UniWebViewTransitionEdge
 {
     /// <summary>
@@ -40,4 +43,5 @@ public enum UniWebViewTransitionEdge
     /// Transit the web view from/to right.
     /// </summary>
     Right
+}
 }

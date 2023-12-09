@@ -1,6 +1,5 @@
 using UnityEngine;
 using TMPro;
-using Unity.VisualScripting;
 
 public class WinMenuController : UIController
 {
@@ -21,6 +20,7 @@ public class WinMenuController : UIController
             _levelButton.text = (LevelData.GetCurrentLevel() + 1).ToString();
     }
 
+    [OPS.Obfuscator.Attribute.DoNotRename]
     public void HomeButton(){
         LevelData.SetLevelOpened(LevelData.GetCurrentLevel() + 1);
         LevelData.SetLevelWin(LevelData.GetCurrentLevel());
@@ -28,6 +28,7 @@ public class WinMenuController : UIController
         LoadScene.LoadPreviousScene();
     }
 
+    [OPS.Obfuscator.Attribute.DoNotRename]
     public void NextLevelButton(){
         if(LevelData.GetCurrentLevel() == 19){
             HomeButton();
