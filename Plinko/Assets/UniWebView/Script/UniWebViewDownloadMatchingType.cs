@@ -18,6 +18,8 @@
 /// <summary>
 /// The matching type used when UniWebView determines whether to download from a URL or MIME type.
 /// </summary>
+namespace UniWebViewNamespace
+{
 public enum UniWebViewDownloadMatchingType
 {
     /// <summary>
@@ -29,4 +31,4 @@ public enum UniWebViewDownloadMatchingType
     /// </summary>
     RegularExpression = 2
 }
-
+}

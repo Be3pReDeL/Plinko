@@ -116,7 +116,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7564bc9b60b184bd6a24c9a14e08e634, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _collectVFX: {fileID: 1088628266764596703}
+  _shineVFX: {fileID: 1088628266764596703}
+  _collectVFX: {fileID: 519461557295974216, guid: 28d4e990db002444ab76f9b78c9009d1, type: 3}
 --- !u!82 &3118222339780667802
 AudioSource:
   m_ObjectHideFlags: 0

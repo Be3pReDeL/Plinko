@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.Networking;
 using System.Collections;
-
+using UniWebViewNamespace;
 public class ChooseWhichToLoad : MonoBehaviour
 {
     //https://dev-rcovvc6yf0j9213.api.raw-labs.com/applinks?key=privacy%20policy

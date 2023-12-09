@@ -19,12 +19,14 @@ public class LevelButton : MonoBehaviour
         _levelText.text = _levelIndex.ToString();
     }
 
+    [OPS.Obfuscator.Attribute.DoNotRename]
     public void LoadGame(){
         LevelData.SetCurrentLevel(_levelIndex);
 
         LoadScene.LoadNextScene();
     }
 
+    [OPS.Obfuscator.Attribute.DoNotRename]
     public void BuyLevel(){
         if(ValueManager.GetValueCount() >= _cost){
             ValueManager.ChangeValueCount(-_cost);

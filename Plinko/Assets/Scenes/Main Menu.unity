@@ -2610,6 +2610,7 @@ GameObject:
   - component: {fileID: 519420031}
   - component: {fileID: 519420029}
   - component: {fileID: 519420033}
+  - component: {fileID: 519420034}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -2779,6 +2780,19 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &519420034
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 519420028}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d99bffcaa0b4e4b21811897e0c8fbc1a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _screenOrientation: 1
 --- !u!1 &520161384 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5945727290594142452, guid: 5624a551b490844738cbff22972519e2, type: 3}
@@ -4494,6 +4508,7 @@ MonoBehaviour:
   _duration: 0.3
   _privacyPolicyWebView: {fileID: 1900085666445226, guid: 7e3f16a6f6303419cbd9837f6c746de4, type: 3}
   _privacyPolicyURL: https://dev-rcovvc6yf0j9213.api.raw-labs.com/applinks?key=privacy%20policy
+  _appID: 6474070185
 --- !u!114 &861016195
 MonoBehaviour:
   m_ObjectHideFlags: 0

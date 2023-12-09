@@ -37,6 +37,8 @@ using System;
 /// external browser by using Unity's `Application.OpenURL`.
 /// 
 /// </summary>
+namespace UniWebViewNamespace
+{
 public class UniWebViewSafeBrowsing: UnityEngine.Object {
     /// <summary>
     /// Delegate for safe browsing finish event.
@@ -190,4 +192,5 @@ public class UniWebViewSafeBrowsing: UnityEngine.Object {
         UniWebViewNativeListener.RemoveListener(listener.Name);
         Destroy(listener.gameObject);
     }
+}
 }

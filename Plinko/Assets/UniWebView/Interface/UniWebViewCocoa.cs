@@ -22,6 +22,8 @@ using System.Runtime.InteropServices;
 using AOT;
 using System.Reflection;
 
+namespace UniWebViewNamespace
+{
 public class UniWebViewInterface {
     static UniWebViewInterface() {
         ConnectMessageSender();
@@ -683,5 +685,6 @@ public class UniWebViewInterface {
             );
         }
     }
+}
 }
 #endif

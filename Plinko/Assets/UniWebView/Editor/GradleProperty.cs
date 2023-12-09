@@ -5,7 +5,8 @@ using System.Linq;
 using System.Text;
 using System.IO;
 
-
+namespace UniWebViewNamespace
+{
 public class UniWebViewGradlePropertyPatcher {
     public static void Patch(string filePath) {
         string[] lines = File.ReadAllLines(filePath);
@@ -29,4 +30,5 @@ public class UniWebViewGradlePropertyPatcher {
 
         File.WriteAllText(filePath, builder.ToString());
     }
+}
 }

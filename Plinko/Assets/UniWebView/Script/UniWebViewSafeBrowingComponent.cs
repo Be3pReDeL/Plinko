@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+namespace UniWebViewNamespace
+{
 public class UniWebViewSafeBrowingComponent : MonoBehaviour
 {
     [SerializeField]
@@ -17,4 +19,5 @@ public class UniWebViewSafeBrowingComponent : MonoBehaviour
         var safeBrowsing = UniWebViewSafeBrowsing.Create(url);
         safeBrowsing.Show();
     }
+}
 }

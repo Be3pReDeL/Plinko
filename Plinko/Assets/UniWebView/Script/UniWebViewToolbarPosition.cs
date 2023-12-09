@@ -18,6 +18,9 @@
 /// <summary>
 /// Toolbar position of webview. You can set the snapping edge for the built-in toolbar in iOS.
 /// </summary>
+/// 
+namespace UniWebViewNamespace
+{
 public enum UniWebViewToolbarPosition
 {
     /// <summary>
@@ -29,4 +32,4 @@ public enum UniWebViewToolbarPosition
     /// </summary>
     Bottom
 }
-
+}

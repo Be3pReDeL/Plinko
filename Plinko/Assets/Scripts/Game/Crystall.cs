@@ -6,7 +6,7 @@ public class Crystall : MonoBehaviour
     private SpriteRenderer _spriteRenderer;
     private AudioSource _audioSource;
 
-    [SerializeField] private GameObject _collectVFX;
+    [SerializeField] private GameObject _shineVFX, _collectVFX;
 
     private void Awake(){
         _spriteRenderer = GetComponent<SpriteRenderer>();
@@ -25,7 +25,8 @@ public class Crystall : MonoBehaviour
 
     private IEnumerator DestroyAfterTime(){
         _spriteRenderer.enabled = false;
-        _collectVFX.SetActive(false);
+        _shineVFX.SetActive(false);
+        Instantiate(_collectVFX, transform.position, Quaternion.identity);
 
         yield return new WaitForSeconds(1f);
 

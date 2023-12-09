@@ -25,6 +25,8 @@ using System;
 /// It will be added automatically and destroyed as needed. So there is rarely a need for you 
 /// to manipulate on this class.
 /// </summary>
+namespace UniWebViewNamespace
+{
 public class UniWebViewNativeListener: MonoBehaviour {
     
     private static Dictionary<String, UniWebViewNativeListener> listeners = new Dictionary<String, UniWebViewNativeListener>();
@@ -193,4 +195,5 @@ public class UniWebViewNativeResultPayload {
     /// corresponding APIs to know what exactly contained in this.
     /// </summary>
     public string data;
+}
 }

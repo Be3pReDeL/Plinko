@@ -13,6 +13,7 @@ public class LevelSelectorMenuController : UIController
         }
     }
 
+    [OPS.Obfuscator.Attribute.DoNotRename]
     public void Back()
     {
         for(int i = 0; i < _tweenObjects.Count; i++)

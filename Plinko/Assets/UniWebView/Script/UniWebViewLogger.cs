@@ -19,6 +19,9 @@
 /// A leveled logger which could log UniWebView related messages in 
 /// both development environment and final product.
 /// </summary>
+/// 
+namespace UniWebViewNamespace
+{
 public class UniWebViewLogger {
     /// <summary>
     /// Logger level.
@@ -117,4 +120,5 @@ public class UniWebViewLogger {
             }
         }
     }
+}
 }

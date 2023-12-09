@@ -4,7 +4,8 @@ using UnityEngine;
 using System.IO;
 using System.Text;
 
-
+namespace UniWebViewNamespace
+{
 class UniWebViewPostBuildProcessor : IPostGenerateGradleAndroidProject
 {
     public int callbackOrder { get { return 1; } }
@@ -113,4 +114,5 @@ class UniWebViewPostBuildProcessor : IPostGenerateGradleAndroidProject
         #endif
         return CombinePaths(compos);
     }
+}
 }

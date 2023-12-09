@@ -2,6 +2,8 @@
 
 using UnityEngine;
 
+namespace UniWebViewNamespace
+{
 public class UniWebViewInterface {
     private static readonly AndroidJavaClass plugin;
     private static bool correctPlatform = Application.platform == RuntimePlatform.Android;
@@ -408,5 +410,6 @@ public class UniWebViewInterface {
             throw new System.InvalidOperationException("Method can only be performed on Android.");
         }
     }
+}
 }
 #endif

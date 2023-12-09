@@ -5,6 +5,7 @@ public class MainMenuController : UIController
 {
     [SerializeField] private float _duration = 1f;
 
+    [OPS.Obfuscator.Attribute.DoNotRename]
     private void OnEnable()
     {
         for (int i = 0; i < _tweenObjects.Count; i++)
@@ -13,6 +14,7 @@ public class MainMenuController : UIController
         }
     }
 
+    [OPS.Obfuscator.Attribute.DoNotRename]
     public void Play()
     {
         for(int i = 0; i < _tweenObjects.Count; i++)

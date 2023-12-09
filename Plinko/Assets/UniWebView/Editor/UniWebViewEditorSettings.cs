@@ -4,6 +4,8 @@ using System.Collections.Generic;
 using System;
 using System.IO;
 
+namespace UniWebViewNamespace
+{
 class UniWebViewEditorSettings: ScriptableObject
 {
     const string assetPath = "Assets/Editor/UniWebView/settings.asset";
@@ -111,4 +113,5 @@ static class UniWebViewSettingsProvider {
         EditorGUILayout.LabelField(text, EditorStyles.miniLabel);
         EditorGUI.indentLevel--;
     }
+}
 }

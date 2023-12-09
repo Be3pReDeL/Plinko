@@ -3,6 +3,8 @@ using System.Collections;
 using System.Text;
 using System.IO;
 
+namespace UniWebViewNamespace
+{
 internal class UniWebViewAndroidXmlDocument : XmlDocument {
     private string path;
     protected XmlNamespaceManager nameSpaceManager;
@@ -139,4 +141,5 @@ internal class UniWebViewAndroidManifest : UniWebViewAndroidXmlDocument {
         }
         return changed;
     }
+}
 }

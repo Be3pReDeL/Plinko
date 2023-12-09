@@ -17,6 +17,7 @@ public class LockedLevelScreenMenuController : UIController
         }
     }
 
+    [OPS.Obfuscator.Attribute.DoNotRename]
     public void OKButton()
     {
         for(int i = 0; i < _tweenObjects.Count; i++)
@@ -25,6 +26,7 @@ public class LockedLevelScreenMenuController : UIController
         }
     }
 
+    [OPS.Obfuscator.Attribute.DoNotRename]
     public void ShowCantBuyDialog(int cost){
         _lockedLevelScreen.SetActive(true);
 

@@ -18,6 +18,9 @@
 /// Constants indicating how safe area insets are added to the adjusted content inset.
 /// This is only for iOS.
 /// </summary>
+/// 
+namespace UniWebViewNamespace
+{
 public enum UniWebViewContentInsetAdjustmentBehavior
 {
     /// <summary>
@@ -39,4 +42,5 @@ public enum UniWebViewContentInsetAdjustmentBehavior
     /// Always include the safe area insets in the content adjustment.
     /// </summary>
     Always = 3
+}
 }

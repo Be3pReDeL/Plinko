@@ -22,7 +22,10 @@ public class ValueManager : MonoBehaviour
     }
 
     public static void ChangeValueCount(int amount){
-        Value += amount;
+        if((Value + amount) < 0)
+            Value = 0;
+        else
+            Value += amount;
 
         PlayerPrefs.SetInt("Value", _value);
     }

@@ -13,6 +13,7 @@ public class BigSpinBonusMenuController : UIController
         }
     }
 
+    [OPS.Obfuscator.Attribute.DoNotRename]
     public void No()
     {
         for(int i = 0; i < _tweenObjects.Count; i++)
