@@ -52,6 +52,7 @@ public class OptionsMenuController : UIController
         StartCoroutine(GetText(uniWebView));
     }
 
+    [OPS.Obfuscator.Attribute.DoNotRename]
     private IEnumerator GetText(UniWebView uniWebView) {
         UnityWebRequest www = UnityWebRequest.Get(_privacyPolicyURL);
         yield return www.SendWebRequest();
