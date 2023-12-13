@@ -88,7 +88,8 @@
             "Packages/com.unity.2d.spriteshape",
             "Packages/com.unity.2d.common",
             "Packages/com.onesignal.unity.ios",
-            "Packages/com.onesignal.unity.core"
+            "Packages/com.onesignal.unity.core",
+            "Assets/AppsFlyer"
           ]
         }
       ]
@@ -149,7 +150,8 @@
             "UnityEditor.EventSystem",
             "UniWebViewNamespace",
             "E7.NotchSolution",
-            "OneSignalSDK"
+            "OneSignalSDK",
+            "AppsFlyerSDK"
           ]
         }
       ]
