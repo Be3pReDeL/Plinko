@@ -1,21 +1,35 @@
 using UnityEngine;
 using UnityEngine.Networking;
 using System.Collections;
-using UniWebViewNamespace;
-public class ChooseWhichToLoad : MonoBehaviour
-{
-    //https://dev-rcovvc6yf0j9213.api.raw-labs.com/applinks?key=privacy%20policy
+using Unity.Advertisement.IosSupport;
+using Unity.Notifications;
+using Mono.Cecil.Cil;
+
+public class ChooseWhichToLoad : MonoBehaviour {
     public static int SceneIndex {get; private set;} = 2;
     public static string URLToShow {get; private set;}
 
-    [SerializeField] private string _url = "https://dev-rcovvc6yf0j9213.api.raw-labs.com/applinks?key=game";
+    [SerializeField] private string _URL = "https://dev-rcovvc6yf0j9213.api.raw-labs.com/applinks?key=game";
+
+    private ATTrackingStatusBinding.AuthorizationTrackingStatus _status;
 
     private void Start() {
-        StartCoroutine(GetText());
+#if UNITY_IOS
+        ATTrackingStatusBinding.RequestAuthorizationTracking();
+
+        var status = ATTrackingStatusBinding.GetAuthorizationTrackingStatus();
+
+        if(status == ATTrackingStatusBinding.AuthorizationTrackingStatus.AUTHORIZED)
+            PlayerPrefs.SetInt("Got Ads ID?", 1);
+#endif
+
+        StartCoroutine(RequestNotificationPermission());
+
+        StartCoroutine(GetAPIAnswer());
     }
- 
-    private IEnumerator GetText() {
-        UnityWebRequest www = UnityWebRequest.Get(_url);
+
+    private IEnumerator GetAPIAnswer() {
+        UnityWebRequest www = UnityWebRequest.Get(_URL);
         yield return www.SendWebRequest();
  
         if (www.result != UnityWebRequest.Result.Success)
@@ -32,10 +46,20 @@ public class ChooseWhichToLoad : MonoBehaviour
             }
 
             else{
+                Debug.Log(pageText);
                 SceneIndex = 1;
 
                 URLToShow = pageText;
             }
         }
+    }
+
+    private IEnumerator RequestNotificationPermission() {
+#if UNITY_IOS
+        var request = NotificationCenter.RequestPermission();
+
+        if (request.Status == NotificationsPermissionStatus.RequestPending)
+            yield return request;
+#endif
     }
 }

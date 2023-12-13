@@ -94,6 +94,7 @@ public class BonusWheelMenuController : UIController
     }
 
     private void Close(){
+        _spinButton.interactable = true;
         for(int i = 0; i < _tweenObjects.Count; i++)
         {
             _tweenObjects[i].Disappear(_duration);
